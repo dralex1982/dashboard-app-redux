@@ -10,8 +10,8 @@ import { selectFilters } from "store/filters/filter-selectors";
 
 const JobList = () => {
   const dispatch = useDispatch();
-  const currentFilters = useSelector(selectFilters);
 
+  const currentFilters = useSelector(selectFilters);
   const positions = useSelector((state) =>
     selectVisiblePositions(state, currentFilters)
   );
